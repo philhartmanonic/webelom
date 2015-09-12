@@ -1,0 +1,46 @@
+-------------------
+       Player
+-------------------
+1 id            smallint        pk
+2 name          varchar(255)
+3 team          smallint        fk
+4 position      smallint        fk
+
+-------------------
+        Position
+-------------------------
+1 id            smallint        pk
+2 poisition     varchar(255)
+
+----------------------------
+        Team
+-----------------------
+1 id            smallint        pk
+2 name          varchar(255)
+3 location      varchar(255)
+4 abbreviation  varchar(255)
+
+---------------------------
+        Pundit
+---------------------------
+1 id            smallint        pk
+2 name          varchar(255)    pk
+
+--------------------------
+        Projection
+--------------------------
+1 id            smallint        pk
+2 player        smallint        fk
+3 pundit        smallint        fk
+4 adp           float
+5 passYards     float
+6 passTD        float
+7 oInt          float
+8 fumbL         float
+9 fumbR         float
+10 rushYards    float
+11 rushTD       float
+12 recYards     float
+13 recTD        float
+14 pAllowed     float
+15 sacks        float
